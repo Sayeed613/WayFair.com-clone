@@ -32,7 +32,7 @@ function ProductsSection({ products, loading, error, currentItems, handlePageCha
               <h2 className="text-gray-400 text-sm">by {product.brand}</h2>
               <div className="flex gap-3 items-center">
                 <p className="pt-2 text-red-800 text-[20px] font-bold">${product.discount_price}</p>
-                <p className="pt-2 text-gray-400 text-[15px] line-through">${product.original_price}</p>
+                <p className="pt-2 text-gray-400 text-[15px] line-through">${product.exact_price}</p>
               </div>
               <div className="flex gap-3 items-center">
                 <p className="pt-2 text-gray-600 text-[13px]">Rating: {product.rating || 'N/A'} ({product.votes || 'N/A'} votes)</p>
