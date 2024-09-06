@@ -45,7 +45,7 @@ export default function ProductViewPage() {
     return <p>No product found.</p>;
   }
 
-  const { title, image_url, brand, discount_price, original_price, rating, votes, discount, category } = product;
+  const { title, image_url, brand, discount_price, exact_price, rating, votes, discount, category } = product;
 
   const handleQuantityChange = (type) => {
     setQuantity((prevQuantity) => {
@@ -84,7 +84,7 @@ export default function ProductViewPage() {
           </div>
           <div className="flex gap-2 items-center mb-4">
             <p className="text-red-800 font-semibold text-2xl">${discount_price}</p>
-            <p className="text-gray-500 line-through">${original_price}</p>
+            <p className="text-gray-500 line-through">${exact_price}</p>
             <p className="text-red-500 text-lg">{discount}</p>
           </div>
           <p className="text-red-800 font-semibold text-3xl mb-4">On Sale</p>
